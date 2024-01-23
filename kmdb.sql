@@ -126,7 +126,15 @@ CREATE TABLE stars (
 
 -- Insert data into your database that reflects the sample data shown above
 -- Use hard-coded foreign key IDs when necessary
--- TODO!
+INSERT INTO movies (title, release_year, rating, studio)
+VALUES ("Batman Begins", "2005", "PG-13", "Warner Bros.");
+
+INSERT INTO movies (title, release_year, rating, studio)
+VALUES ("The Dark Knight", "2008", "PG-13", "Warner Bros.");
+
+INSERT INTO movies (title, release_year, rating, studio)
+VALUES ("The Dark Knight Rises", "2012", "PG-13", "Warner Bros.");
+
 
 -- Prints a header for the movies output
 .print "Movies"
@@ -134,7 +142,7 @@ CREATE TABLE stars (
 .print ""
 
 -- The SQL statement for the movies output
--- TODO!
+SELECT * FROM movies;
 
 -- Prints a header for the cast output
 .print ""
